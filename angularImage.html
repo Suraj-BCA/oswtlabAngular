@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="angular.min.js"></script>
+        <script>
+        var a = angular.module("myModule",[]);
+            a.controller("myController",function($scope)
+            {
+                $scope.image = "cc.png";
+            }
+            );
+            </script>
+    </head>
+    <body ng-app="myModule">
+        <div ng-controller="myController">
+            <img ng-src="{{image}}">
+        </div>
+    </body>
