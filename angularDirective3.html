@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="angular.min.js"></script>
+        <script>
+            var a = angular.module("myModule",[]);
+
+            a.controller("myController",function($scope){
+                $scope.names = ['Vadlamudi','Guntur','Tenali'];
+            });
+        </script>
+    </head>
+    <body>
+        <div ng-app="myModule" ng-controller="myController">
+            <h1 ng-repeat="x in names">
+                {{x}}
+            </h1>
+        </div>
+    </body>
+</html>

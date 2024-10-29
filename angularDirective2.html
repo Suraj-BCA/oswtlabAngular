@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app ng-init="names=[{name:'Taj Mahal',country:'India'},
+        {name:'Great Wall',country:'China'},
+        {name:'Moscow',country:'Russia'}]">
+           
+        <ul>
+            <li ng-repeat="x in names">
+                {{x.name+','+x.country}}
+            </li>
+        </ul>
+        </div>
+    </body>
+</html>
